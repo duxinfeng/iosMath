@@ -663,6 +663,17 @@ NSString *const MTSymbolDegree = @"\u00B0"; // \circ
                      @"jmath" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"\U0001D6A5"],
                      @"partial" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"\U0001D715"],
                      
+                     // -------------------------   新增部分 -------------------------------------
+                     // 补充不支持的 ∵  ∴ 符号  //来自 https://github.com/kostub/iosMath/issues/167
+                     @"because" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"∵"],
+                     @"therefore" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"∴"],
+                     @"varnothing" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"∅"],
+                     @"lbrack" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"["],
+                     @"rbrack" : [MTMathAtom atomWithType:kMTMathAtomOrdinary value:@"]"],
+
+                     // -------------------------   END -------------------------------------
+
+                     
                      // Spacing
                      @"," : [[MTMathSpace alloc] initWithSpace:3],
                      @">" : [[MTMathSpace alloc] initWithSpace:4],
