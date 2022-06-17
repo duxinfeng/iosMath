@@ -50,8 +50,9 @@ typedef NS_ENUM(unsigned int, MTMathListSubIndexType) {
     kMTSubIndexTypeRadicand,
     /// The subindex indexes into the degree (only valid for radicals)
     kMTSubIndexTypeDegree,
+    
     /// The subindex indexes into the inner list (only valid for inner)
-    kMTSubIndexTypeInner
+//    kMTSubIndexTypeInner // 更新 pod 到0.9.5 新增的一个type 但是好像也没有使用，配合MathEditor https://github.com/kostub/MathEditor 打包编译的时候报错，这里直接先注释掉这个类型吧
 };
 
 
